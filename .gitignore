@@ -1,3 +1,7 @@
 .vs
 packages
 .DS_Store
+CnSub/bin
+CnSub/obj
+Demo/bin
+Demo/obj
