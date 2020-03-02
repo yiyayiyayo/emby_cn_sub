@@ -220,7 +220,7 @@ namespace CnSub
                     }
                 }
 
-                TrySaveSubtitles(mediaPath, entriesToSave.Where(entry => entry != currentEntry));
+                //TrySaveSubtitles(mediaPath, entriesToSave.Where(entry => entry != currentEntry));
             }
             catch (InvalidFormatException)
             {
