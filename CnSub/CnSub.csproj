@@ -25,4 +25,7 @@
   <ItemGroup>
     <EmbeddedResource Include="thumb.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="snapshots\" />
+  </ItemGroup>
 </Project>
