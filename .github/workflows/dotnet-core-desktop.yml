@@ -11,7 +11,7 @@ script:
 deploy:
   provider: releases
 file_glob: true
-  file: Emby/bin/Release/*/Emby.cn.sub.dll
+  file: Emby.cn.sub.dll
   skip_cleanup: true
   on:
     tags: true
