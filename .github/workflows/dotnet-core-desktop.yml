@@ -1,0 +1,19 @@
+language: csharp
+mono: none
+dist: trusty
+dotnet: 2.0.0
+solution: CNSubtitles.sln
+
+install:
+- dotnet restore
+script:
+- dotnet build -c Release
+deploy:
+  provider: releases
+file_glob: true
+  file: Emby/bin/Release/*/Emby.cn.sub.dll
+  skip_cleanup: true
+  on:
+    tags: true
+  watch:
+    types: started
