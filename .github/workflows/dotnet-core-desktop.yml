@@ -13,5 +13,6 @@ deploy:
   file: emby_cn_sub/bin/Release/*/Emby.cn.sub.dll
   skip_cleanup: true
   on:
-    repo: PoppyPop/Emby.cn.sub
+  watch:
+    types: started
     tags: true
