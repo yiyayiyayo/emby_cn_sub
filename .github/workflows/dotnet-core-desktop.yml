@@ -12,7 +12,4 @@ deploy:
   file_glob: true
   file: emby_cn_sub/bin/Release/*/Emby.cn.sub.dll
   skip_cleanup: true
-  on:
-  watch:
-    types: started
-    tags: true
+ 
