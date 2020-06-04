@@ -3,17 +3,15 @@ mono: none
 dist: trusty
 dotnet: 2.0.0
 solution: CNSubtitles.sln
-
 install:
 - dotnet restore
 script:
 - dotnet build -c Release
 deploy:
   provider: releases
-file_glob: true
- 
+  file_glob: true
+  file: emby_cn_sub/bin/Release/*/Emby.cn.sub.dll
   skip_cleanup: true
   on:
+    repo: PoppyPop/Emby.cn.sub
     tags: true
-  watch:
-    types: started
