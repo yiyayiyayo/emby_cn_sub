@@ -12,3 +12,15 @@ deploy:
   file_glob: true
   file: emby_cn_sub/bin/Release/*/Emby.cn.sub.dll
   skip_cleanup: true
+on:
+  repository_dispatch:
+  release:
+    types: published
+  push:
+    branches:
+      - master
+
+#  schedule:
+#    - cron: 0 8 * * 5
+  watch:
+    types: started
